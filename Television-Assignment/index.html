@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Television Application</title>
+</head>
+<body>
+    
+    <div id="application">
+        <div class="tv-frame">
+            <div v-if="tv_on == true" class="tv-show">
+                <div v-for="(slide, index) in slides">
+                    <iframe :src="slide" v-show="visible == index" width="99%" height="330"></iframe>
+                </div>
+            </div>
+            <div v-else class="tv-off">
+                This
+            </div>
+
+            <div class="tv-power">
+                <button @click="toggleOnOff">Power On</button>
+            </div>
+            <div class="tv-previous">
+                <button @click="prev"> < </button>
+            </div>
+            <div class="tv-next">
+                <button @click="next"> > </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="vue.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

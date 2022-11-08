@@ -9,7 +9,6 @@
 <body>
     
     <div id="app">
-
         <div v-if=" bolValue == true ">
             <img src="true-off.webp" alt="">
         </div>
@@ -18,12 +17,9 @@
             <img src="true-on.webp" alt="">
         </div>
 
-        {{ bolValue }}
-
         <br>
         <label for="on-off">Switch on Bulb</label>
         <input type="checkbox" id="on-off" v-on:click="change_bol_value">
-
     </div>
 
     <script src="vue.js"></script>
