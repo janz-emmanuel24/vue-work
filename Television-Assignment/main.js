@@ -1,11 +1,13 @@
+// const {createApp} = Vue
 Vue.createApp({
     data() {
         return {
-            tv_on: true,
+            tv_on: false,
             slides: [
-                'https://giphy.com/embed/UKm1AF0UrCkb6',
-                'https://giphy.com/embed/xT5LMqjIUKwKuCqoGA',
-                'https://giphy.com/embed/26ufi2F7ip0hKaX0A'
+                'https://www.youtube.com/embed/t0Q2otsqC4I', 
+                'https://www.youtube.com/embed/JnAG50Fe7Hs',
+                'https://www.youtube.com/embed/mShlLa5TuAQ'
+                
             ],
             visible: 0
         }

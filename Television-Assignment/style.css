@@ -4,6 +4,7 @@
     background: black;
     margin: 10% auto;
     position: relative;
+    
 }
 
 .tv-show {
@@ -12,20 +13,19 @@
     background: gray;
     position: absolute;
     top: 1%;
-    color: red;
     left: 0.5%;
     right: 0.5%;
 }
 
 .tv-off {
-    width: 99%;
-    color: white;
+    width: 98%;
     height: 330px;
-    background: black;
+    background: rgb(48, 47, 47);
     position: absolute;
-    top: 1%;
-    left: 0.5%;
-    right: 0.5%;
+    top: 0.5%;
+    left: 1%;
+    right: 1%;
+    bottom: -0.5%;
 }
 
 .tv-power {

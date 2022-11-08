@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Television Application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     
@@ -14,20 +15,20 @@
             <div v-if="tv_on == true" class="tv-show">
                 <div v-for="(slide, index) in slides">
                     <iframe :src="slide" v-show="visible == index" width="99%" height="330"></iframe>
+                    <!-- <video :src="slide" v-show="visible == index" width="99%" height="330"></video> -->
                 </div>
             </div>
             <div v-else class="tv-off">
-                This
             </div>
 
             <div class="tv-power">
-                <button @click="toggleOnOff">Power On</button>
+                <button @click="toggleOnOff" style="width: 30px; height: 30px; border-radius: 50%"><i class="fa-solid fa-power-off" style="color: red"></i></button>
             </div>
             <div class="tv-previous">
-                <button @click="prev"> < </button>
+                <button @click="prev" style="width: 30px; height: auto;"><i class="fa-solid fa-backward-fast"></i></button>
             </div>
             <div class="tv-next">
-                <button @click="next"> > </button>
+                <button @click="next" style="width: 30px; height: auto;"><i class="fa-solid fa-forward-fast"></i></button>
             </div>
         </div>
     </div>
