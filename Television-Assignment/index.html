@@ -13,8 +13,8 @@
     <div id="application">
         <div class="tv-frame">
             <div v-if="tv_on == true" class="tv-show">
-                <div v-for="(slide, index) in slides">
-                    <iframe :src="slide" v-show="visible == index" width="99%" height="330"></iframe>
+                <div v-for="(channel, index) in channels">
+                    <iframe :src="channel" v-show="visible == index" width="99%" height="330"></iframe>
                     <!-- <video :src="slide" v-show="visible == index" width="99%" height="330"></video> -->
                 </div>
             </div>

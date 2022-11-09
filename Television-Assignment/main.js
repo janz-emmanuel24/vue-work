@@ -3,7 +3,7 @@ Vue.createApp({
     data() {
         return {
             tv_on: false,
-            slides: [
+            channels: [
                 'https://www.youtube.com/embed/t0Q2otsqC4I', 
                 'https://www.youtube.com/embed/JnAG50Fe7Hs',
                 'https://www.youtube.com/embed/mShlLa5TuAQ'
@@ -17,7 +17,7 @@ Vue.createApp({
             this.tv_on = !this.tv_on
         },
         next() {
-            if(this.visible >= this.slides.length - 1) {
+            if(this.visible >= this.channels.length - 1) {
                 this.visible = 0;
             } else {
                 this.visible++;
@@ -25,7 +25,7 @@ Vue.createApp({
         },
         prev() {
             if(this.visible <= 0) {
-                this.visible = this.slides.length -1 ;
+                this.visible = this.channels.length -1 ;
             } else {
                 this.visible--;
             }
